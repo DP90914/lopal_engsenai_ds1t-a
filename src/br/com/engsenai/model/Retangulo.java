@@ -11,6 +11,11 @@ public class Retangulo {
 			this.base = base;
 		}
 	}
+	
+	public double getBase() {
+		return this.base;
+	}
+	
 	public void setLado(double altura) {
 		if(altura<0){
 			this.altura = 1;
@@ -19,17 +24,22 @@ public class Retangulo {
 		}
 	}
 	
+	public double getAltura() {
+		return this.altura;
+	}
+	
 	private double calcularArea() {
 		double area = altura * base;
 		return area;
 	}
+	
 	private double calcularPerimetro() {
 		double perimetro = 2 * altura + 2 * base;
 		return perimetro;
 	}
 	public void mostrarDados(){
 		System.out.println("------------------------------------------");
-		System.out.println("DADOS DO QUADRADO");
+		System.out.println("DADOS DO RETANGULO");
 		System.out.println("------------------------------------------");
 		System.out.println("altura:    " + altura);
 		System.out.println("BASE:      " + base);
