@@ -16,7 +16,7 @@ public class Retangulo {
 		return this.base;
 	}
 	
-	public void setLado(double altura) {
+	public void setAltura(double altura) {
 		if(altura<0){
 			this.altura = 1;
 		} else {
