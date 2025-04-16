@@ -27,8 +27,8 @@ public class Menu {
 		if (opcao == 1) {
 			Quadrado q1 = new Quadrado();
 
-			System.out.print("ESCOLHER LADO: ");
-			double escolherLado = leitor1.nextInt();
+			System.out.println("ESCOLHER LADO: ");
+			double escolherLado = leitor1.nextDouble();
 			q1.setLado(escolherLado);
 			q1.mostrarDados();
 
@@ -37,11 +37,11 @@ public class Menu {
 			Retangulo r1 = new Retangulo();
 			
 			System.out.print("ESCOLHER BASE: ");
-			double escolherBase = leitor1.nextInt();
+			double escolherBase = leitor1.nextDouble();
 			r1.setBase(escolherBase);
 			
 			System.out.print("ESCOLHER ALTURA: ");
-			double escolherAltura = leitor1.nextInt();
+			double escolherAltura = leitor1.nextDouble();
 			r1.setAltura(escolherAltura);
 			
 			r1.mostrarDados();
@@ -49,10 +49,11 @@ public class Menu {
 		if (opcao == 3) {
 			Triangulo t1 = new Triangulo();
 			System.out.print("ESCOLHER BASE:");
-			double escolherBase = leitor1.nextInt();
+			double escolherBase = leitor1.nextDouble();
 			t1.setBase(escolherBase);
+			
 			System.out.print("ESCOLHER ALTURA:");
-			double escolherAltura = leitor1.nextInt();
+			double escolherAltura = leitor1.nextDouble();
 			t1.setAltura(escolherAltura);
 			t1.mostrarDados();
 
@@ -60,23 +61,24 @@ public class Menu {
 		if (opcao == 4) {
 			Trapezio t2 = new Trapezio();		
 			System.out.print("ESCOLHER BASE MAIOR:");
-			double escolherBaseMaior = leitor1.nextInt();
+			double escolherBaseMaior = leitor1.nextDouble();
 			t2.setBaseMaior(escolherBaseMaior);
+			
 			System.out.print("ESCOLHER BASE MENOR:");
-			double escolherBaseMenor = leitor1.nextInt();
+			double escolherBaseMenor = leitor1.nextDouble();
 			t2.setBaseMenor(escolherBaseMenor);
 			t2.mostrarDados();
 		}
 		if (opcao == 5) {
 			Circunferencia c1 = new Circunferencia();
 			System.out.print("ESCOLHER RAIO:");
-			double escolherRaio = leitor1.nextInt();
+			double escolherRaio = leitor1.nextDouble();
 			c1.setRaio(escolherRaio);
 			c1.mostrarDados();
 
 		}
 		if (opcao == 6) {
-
+			System.exit(0);
 		}
 
 	}
